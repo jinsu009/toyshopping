@@ -16,6 +16,7 @@ public class TestController {
 
     @GetMapping(value = "/home")
     public String getTest(){
-        return "hello world";
+        return "hello world hi";
     }
+
 }

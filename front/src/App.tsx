@@ -7,11 +7,8 @@ function App() {
     const [test, setTest] = useState('');
 
     useEffect(()=>{
-        axios({
-            url:'/home',
-            method : 'GET'
-        }).then((res)=>{
-            setTest(res.data);
+        axios.get('/test/api/home').then(function(resp){
+            setTest(resp.data)
         })
     },[])
 
